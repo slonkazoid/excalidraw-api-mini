@@ -1,0 +1,5 @@
+CREATE TABLE entries (
+	id UUID PRIMARY KEY,
+	value BYTEA NOT NULL,
+	inserted_at TIMESTAMPTZ DEFAULT NOW() NOT NULL
+);
