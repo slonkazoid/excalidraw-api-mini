@@ -38,4 +38,5 @@ excalidraw-api-mini
 - No per-client rate limiting, only a global concurrency limit to not bog down
   the database in case of a DOS attack.
 - Shared items last forever (you should use an external script to manage
-  this—that is why the `inserted_at` field exists.
+  this—the `id` field is actually an [ulid](https://github.com/ulid/spec)
+  which stores a 48-bit timestamp with millisecond precision.
