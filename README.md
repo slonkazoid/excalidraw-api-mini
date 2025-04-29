@@ -1,6 +1,6 @@
 # excalidraw-api-mini
 
-excalidraw sharing API written in rust
+lightweight excalidraw sharing API implementation in rust
 
 ## Building
 
